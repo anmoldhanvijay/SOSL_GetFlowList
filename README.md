@@ -10,3 +10,6 @@ you can easily query it through SOQL.
 3. In query editor check this option 'Use Tooling API'
 4. Run the following query
 Select id,MasterLabel,lastmodifieddate,lastmodifiedby.name from flow Where MasterLabel = 'Opportunity Status Change'
+
+
+SELECT Id, MasterLabel, Description, ProcessType, Status, CreatedDate, LastModifiedDate FROM Flow WHERE status = 'active' AND ProcessType = 'WorkFlow' (Process builder consider as Workflow in this ) 
