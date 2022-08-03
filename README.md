@@ -13,3 +13,7 @@ Select id,MasterLabel,lastmodifieddate,lastmodifiedby.name from flow Where Maste
 
 
 SELECT Id, MasterLabel, Description, ProcessType, Status, CreatedDate, LastModifiedDate FROM Flow WHERE status = 'active' AND ProcessType = 'WorkFlow' (Process builder consider as Workflow in this ) 
+
+
+
+SELECT Id, MasterLabel, Description, ProcessType, Status, CreatedDate, LastModifiedDate FROM Flow WHERE status != 'active' AND ProcessType = 'WorkFlow' (there is no inactive status in Process builder or flow that why no possible to get directly inactive)
