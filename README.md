@@ -17,3 +17,6 @@ SELECT Id, MasterLabel, Description, ProcessType, Status, CreatedDate, LastModif
 
 
 SELECT Id, MasterLabel, Description, ProcessType, Status, CreatedDate, LastModifiedDate FROM Flow WHERE status != 'active' AND ProcessType = 'WorkFlow' (there is no inactive status in Process builder or flow that why no possible to get directly inactive)
+
+
+SELECT ProcessType, Label FROM FlowDefinitionView WHERE IsActive !=true  AND ProcessType = WorkFlow
